@@ -7,9 +7,9 @@ class Visin extends CI_Controller {
         $dataJson=json_decode($dataStringJson);
         $data=$dataJson[2]->data;      
         $output['region']=$this->region($data);
-	$output['sales']=$this->sales($data);
-	$output['produk']=$this->produk($data);
-	$output['bulanan']=$this->bulanan($data);        
+	    $output['sales']=$this->sales($data);
+	    $output['produk']=$this->produk($data);
+	    $output['bulanan']=$this->bulanan($data);        
         $this->load->view('visin',$output);        
 	}
 	
